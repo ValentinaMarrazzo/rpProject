@@ -1,0 +1,50 @@
+@import '../variables';
+
+img{
+  height: 50vh;
+}
+
+.display{
+  /*opacity: 0;
+  z-index: -100;*/
+  display: none;
+}
+
+#showMore{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $navigationTheme;
+
+
+  .thisimage{
+    display: flex;
+    img{
+      margin: 0 auto;
+      justify-content: center;
+
+    }
+    .normal{
+      height: 100vh;
+    }
+    .larger{
+      height: 200vh;
+
+    }
+    a{
+      font-size: 3rem;
+      color: $copywritingColor;
+      position: absolute;
+
+    }
+    a:nth-of-type(1){
+      right: 5%;
+    }
+
+  }
+  div{
+    display: none;
+  }
+
+}

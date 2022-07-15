@@ -1,0 +1,38 @@
+
+  <div id="container-grid" nz-row nzJustify="center" nzGutter="0" [ngClass]="{'display': viewCarousel ? 'display' : null}">
+
+    <ng-container *ngFor="let ph of currentPagePh">
+
+
+      <a (click)="viewCarousel = true; scrollToElementById(ph.id)">
+        <img [src]="'../../' + ph.url" alt="">
+      </a>
+
+
+    </ng-container>
+
+  </div>
+
+
+
+
+  <div [class]="class" id="showMore" [ngClass]="{'display': !viewCarousel ? 'display' : null}" >
+    <div [ngClass]="{'thisimage': elId == pl.id ? 'thisimage' : null}" id="{{pl.id}}" *ngFor="let pl of currentPagePh">
+      <a (click)="viewCarousel = false">
+        <i nz-icon nzType="close" nzTheme="outline"></i>
+      </a>
+      <a (click)="resize(true)" *ngIf="class=='normal'">
+        <i nz-icon nzType="arrows-alt" nzTheme="outline"></i>
+      </a>
+        <a (click)="resize(false)" *ngIf="class=='larger'">
+
+          <i nz-icon nzType="shrink" nzTheme="outline" ></i>
+        </a>
+
+     <img [src]="'../../' + pl.url" [class]="class">
+
+    </div>
+
+
+    </div>
+

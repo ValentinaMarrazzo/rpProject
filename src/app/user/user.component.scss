@@ -1,0 +1,93 @@
+@import '../mixin';
+@import '../variables';
+
+h1{
+  @include title;
+  margin: 5% 3%;
+
+}
+
+#card{
+  margin: 3%;
+  border: 1px solid $detailsTheme;
+  border-radius: 3%;
+  width: fit-content;
+  padding: 3%;
+  #title{
+    border-bottom: 1px solid $detailsTheme;
+    h2{
+      font-family: $copywritingFont;
+      color: $copywritingColor;
+      font-size: 1.5rem;
+      font-weight: 800;
+      display: inline;
+    }
+    button{
+      @include button;
+      margin: 0 8%;
+    }
+  }
+  #content{
+    h3{
+      font-family: $copywritingFont;
+      color: $copywritingColor;
+      font-size: 1.5rem;
+      margin: 10% 0;
+    }
+    p, li{
+      font-family: $copywritingFont;
+      color: $copywritingColor;
+      font-size: 1rem;
+      margin: 10% 0;
+    }
+    li{
+      list-style-type: none;
+    }
+  }
+
+  button{
+    @include button;
+    margin: 5%;
+    cursor: pointer;
+  }
+
+}
+
+#form {
+  margin: 3%;
+  padding: 3%;
+ display: flex;
+ flex-direction: column;
+ width: fit-content;
+text-align: center;
+border: 1px solid $detailsTheme;
+  border-radius: 5%;
+ .group{
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+    .label {
+      margin: 0 3%;
+      width: fit-content;
+
+      label{
+        font-family: $copywritingFont;
+        color: $copywritingColor;
+        font-size: 1rem;
+      }
+    }
+
+    #email, #nickname{
+      @include input;
+    }
+  }
+
+  button{
+    @include button;
+  }
+
+}
+
+#space{
+  height: 11vh;
+}

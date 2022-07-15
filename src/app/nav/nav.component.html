@@ -1,0 +1,28 @@
+<nav>
+  <div id="logo">
+    <div id="img"></div>
+    <a routerLink="/">
+      <h1>Roberto Pernozzoli</h1>
+    </a>
+  </div>
+
+  <ul nz-menu nz-Mode="inline" class="sider-menu">
+    <h3>portfolio</h3>
+    <li nz-menu-item><a [routerLink]="['/pages/Maternity']">Maternity</a></li>
+    <li nz-menu-item><a [routerLink]="['/pages/Collaborazioni']">Collaborazioni</a></li>
+    <li nz-menu-item><a [routerLink]="['/pages/Ritratti']">Ritratti</a></li>
+    <h3>personale</h3>
+    <li nz-menu-item><a [routerLink]="['/pages/Progetti']">Progetti originali</a></li>
+    <li nz-menu-item><a [routerLink]="['/pages/aboutme']">Su di me</a></li>
+    <li nz-menu-item><a [routerLink]="['/shop'] " routerLinkActive #shop="routerLinkActive"><h3>shop</h3></a></li>
+    <li nz-menu-item *ngIf="!isLoggedInNC"><a [routerLink]="['/auth']">Accedi</a></li>
+  </ul>
+
+  <div id="info">
+    <a href=""><i nz-icon nzType="facebook" nzTheme="outline"></i></a>
+    <a href=""><i nz-icon nzType="instagram" nzTheme="outline"></i></a>
+    <a href=""><i nz-icon nzType="whats-app" nzTheme="outline"></i></a>
+    <h6>&copy; Roberto Pernozzoli </h6>
+    <h6>P.IVA: 123456789</h6>
+  </div>
+</nav>

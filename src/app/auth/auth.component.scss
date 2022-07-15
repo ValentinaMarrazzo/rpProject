@@ -1,0 +1,33 @@
+@import '../variables';
+@import '../mixin';
+
+
+#container{
+  margin: auto;
+ display: flex;
+ flex-direction: column;
+
+ @media screen and (max-width: 640px){
+    margin: 5% 0;
+ }
+}
+
+.card {
+  width: 25vw;
+  align-self: center;
+  text-align: center;
+  margin: 3% 0;
+  padding: 5%;
+  border: 1px solid $detailsTheme;
+  border-radius: 5%;
+  h1{
+    @include title;
+  }
+}
+
+p{
+  color: $copywritingColor;
+  font-size: 1rem;
+  font-family: $copywritingFont;
+  align-self: center;
+}

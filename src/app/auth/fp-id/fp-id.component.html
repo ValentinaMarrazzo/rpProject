@@ -1,0 +1,28 @@
+<h1>Reimposta la tua password</h1>
+
+<ng-container *ngIf="!success">
+
+  <div id="form">
+
+    <form [formGroup]="validateForm" (ngSubmit)="newPassword()">
+      <div id="item">
+        <label for="password">Inserisci la tua password:</label>
+        <nz-form-control nzErrorTip="Per favore inserisci una nuova password">
+          <nz-input-group>
+            <input id="password" type="password" nz-input formControlName="password" placeholder="password" [(ngModel)]="newPsw"/>
+          </nz-input-group>
+        </nz-form-control>
+      </div>
+      <button nz-button type="submit">Conferma</button>
+      <div id="error" *ngIf="errMsg.status">{{errMsg.text}}</div>
+    </form>
+  </div>
+</ng-container>
+
+<ng-container *ngIf="success">
+  <h2>La tua password è stata modificata!</h2>
+  <a [routerLink]="['/auth']">
+    Torna alla pagina di login
+  </a>
+
+</ng-container>

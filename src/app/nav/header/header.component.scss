@@ -1,0 +1,42 @@
+@import '../../variables';
+
+#navHeader{
+  width: 100%;
+  text-align: center;
+  height: fit-content;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  #cart, #user {
+    margin: 0 5%;
+    @media screen and (max-width: 768px) {
+      margin: 5% 0;
+    }
+  }
+  a {
+    color: $detailsTheme;
+  }
+  span{
+    position: absolute;
+    top: 0;
+    transform: translateX(10px);
+    p{
+      color: $copywritingColor;
+
+    }
+  }
+  i{
+    margin: 0 5%;
+    font-size: 1.5rem;
+    display: inline;
+  }
+
+
+}
+
+
+

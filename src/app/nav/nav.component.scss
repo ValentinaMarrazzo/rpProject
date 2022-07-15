@@ -1,0 +1,51 @@
+@import '../variables';
+
+nav{
+  padding: 3%;
+
+  div, ul {
+    margin: 15% 0;
+  }
+  #logo{
+    text-align: center;
+    font-family: $copywritingFancy;
+    font-size: 1.5rem;
+    @media screen and (max-width: 1024px){
+      font-size: 1rem;
+    }
+    h1{
+      color: $copywritingColor;
+    }
+  }
+  ul{
+    font-family: $copywritingFont;
+    h3{
+      color: $copywritingColor;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 10% 0;
+    }
+    li{
+      list-style-type: none;
+      a{
+        text-decoration: none;
+        color: $copywritingColor;
+      }
+    }
+  }
+
+  #info{
+    text-align: center;
+    a{
+      text-decoration: none;
+        color: $copywritingColor;
+        margin: 0 5%;
+        font-size: 1.2rem;
+    }
+
+    h6{
+      color: $copywritingColor;
+      font-family: $copywritingFont;
+    }
+  }
+}

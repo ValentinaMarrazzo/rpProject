@@ -1,0 +1,35 @@
+<form nz-form [formGroup]="validateForm" (ngSubmit)="signUp()">
+  <nz-form-item>
+
+    <nz-form-control nzErrorTip="Non hai inserito una mail valida">
+      <input nz-input formControlName="email" id="email" [(ngModel)]="anAccount.email" placeholder="Email"/>
+    </nz-form-control>
+  </nz-form-item>
+  <nz-form-item>
+
+    <nz-form-control nzErrorTip="Per favore inserisci una password">
+      <input
+        nz-input
+        type="password"
+        id="password"
+        formControlName="password"
+        [(ngModel)]="anAccount.password"
+        placeholder="Password"
+      />
+    </nz-form-control>
+  </nz-form-item>
+
+  <nz-form-item>
+
+    <nz-form-control nzErrorTip="Per favore inserisci un nickname">
+      <input nz-input id="nickname" formControlName="nickname" [(ngModel)]="anAccount.nickname" placeholder="Nickname"/>
+    </nz-form-control>
+  </nz-form-item>
+
+
+  <nz-form-item nz-row class="register-area">
+    <nz-form-control>
+      <button nz-button nzSize="large">Registrati</button>
+    </nz-form-control>
+  </nz-form-item>
+</form>

@@ -1,0 +1,58 @@
+@import '../../mixin';
+@import '../../variables';
+
+h1{
+  @include title;
+  text-align: center;
+}
+
+#container{
+  width: fit-content;
+  padding: 1%;
+  margin: 2% auto;
+  height: 80vh;
+  h2{
+    font-size: 1.4rem;
+    font-style: $copywritingFont;
+    color: $copywritingColor;
+    font-weight: 800;
+  }
+  h3{
+    font-size: 1rem;
+    font-style: $copywritingFont;
+    color: $copywritingColor;
+    text-decoration: underline;
+    text-align: center;
+  }
+}
+
+#checkout{
+  width: fit-content;
+  margin: 5% auto;
+  padding: 5%;
+  border: 1px solid $detailsTheme;
+  border-radius: 5%;
+  h2, h3, p{
+    color: $copywritingColor;
+  }
+  .title, .total{
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+  .total{
+
+    h3, span{
+      width: fit-content;
+      display: inline;
+    }
+  }
+  button {
+    @include button;
+  }
+
+  button:hover{
+    @include btnhover;
+  }
+
+}
+

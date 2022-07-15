@@ -1,0 +1,202 @@
+{
+  "users": [
+    {
+      "email": "afan@email.com",
+      "password": "$2a$10$oNjolfBr4smA10WYPUWS4./oZShNiMjQKUPyYkTMHHDG8xAdFKDfS",
+      "id": 13,
+      "nickname": "Iamafan"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "email": "afan@email.com",
+      "nickname": "Iamafan",
+      "purchases": [],
+      "userId": 186,
+      "activeStatus": false
+    },
+    {
+      "id": 2,
+      "email": "afan@email.com",
+      "nickname": "Iamafan",
+      "purchases": [
+        {
+          "id": 1,
+          "category": "preset",
+          "imgurl": "assets/img/preset.jpg",
+          "name": "Lightroom preset: perfect skin",
+          "description": "Corregge e illumina la pelle",
+          "price": 15,
+          "avaible": true
+        },
+        {
+          "id": 2,
+          "category": "preset",
+          "imgurl": "assets/img/preset.jpg",
+          "name": "Lightroom preset: candid shot",
+          "description": "Esalta le sfumature calde",
+          "price": 15,
+          "avaible": true
+        },
+        {
+          "id": 1,
+          "category": "preset",
+          "imgurl": "assets/img/preset.jpg",
+          "name": "Lightroom preset: perfect skin",
+          "description": "Corregge e illumina la pelle",
+          "price": 15,
+          "avaible": true
+        }
+      ],
+      "userId": 13,
+      "activeStatus": true
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category": "preset",
+      "imgurl": "assets/img/preset.jpg",
+      "name": "Lightroom preset: perfect skin",
+      "description": "Corregge e illumina la pelle",
+      "price": 15,
+      "avaible": true
+    },
+    {
+      "id": 2,
+      "category": "preset",
+      "imgurl": "assets/img/preset.jpg",
+      "name": "Lightroom preset: candid shot",
+      "description": "Esalta le sfumature calde",
+      "price": 15,
+      "avaible": true
+    }
+  ],
+  "photos": [
+    {
+      "id": 1,
+      "coverUrl": "assets/img/collab/DSC05316-Modifica.jpg",
+      "photos": [
+        {
+          "id": 1,
+          "url": "assets/img/collab/DSC02221.jpg"
+        },
+        {
+          "id": 2,
+          "url": "assets/img/collab/DSC02237.jpg"
+        },
+        {
+          "id": 3,
+          "url": "assets/img/collab/DSC02274.jpg"
+        },
+        {
+          "id": 4,
+          "url": "assets/img/collab/DSC03594-Modifica.jpg"
+        },
+        {
+          "id": 5,
+          "url": "assets/img/collab/DSC05316-Modifica.jpg"
+        },
+        {
+          "id": 6,
+          "url": "assets/img/collab/DSC02397.jpg"
+        }
+      ],
+      "slug": "Collaborazioni"
+    },
+    {
+      "id": 2,
+      "coverUrl": "assets/img/maternity/carmen-6.jpg",
+      "photos": [
+        {
+          "id": 1,
+          "url": "assets/img/maternity/carmen-6.jpg"
+        },
+        {
+          "id": 2,
+          "url": "assets/img/maternity/carmen-20.jpg"
+        },
+        {
+          "id": 3,
+          "url": "assets/img/maternity/carmen-22.jpg"
+        },
+        {
+          "id": 4,
+          "url": "assets/img/maternity/DSC07629-Modifica.jpg"
+        },
+        {
+          "id": 5,
+          "url": "assets/img/maternity/DSC07668-Modifica.jpg"
+        },
+        {
+          "id": 6,
+          "url": "assets/img/maternity/DSC07726-Modifica.jpg"
+        }
+      ],
+      "slug": "Maternity"
+    },
+    {
+      "id": 3,
+      "coverUrl": "assets/img/ritratti/anastasia-37.JPG",
+      "photos": [
+        {
+          "id": 1,
+          "url": "assets/img/ritratti/anastasia-37.JPG"
+        },
+        {
+          "id": 2,
+          "url": "assets/img/ritratti/DSC01829.jpg"
+        },
+        {
+          "id": 3,
+          "url": "assets/img/ritratti/francesca-109.JPG"
+        },
+        {
+          "id": 4,
+          "url": "assets/img/ritratti/DSC05995-Modifica.jpg"
+        },
+        {
+          "id": 5,
+          "url": "assets/img/ritratti/DSC06462-Modifica.JPG"
+        },
+        {
+          "id": 6,
+          "url": "assets/img/ritratti/DSC07985-Modifica.jpg"
+        }
+      ],
+      "slug": "Ritratti"
+    },
+    {
+      "id": 4,
+      "coverUrl": "assets/img/progetti/DSC06517.jpg",
+      "photos": [
+        {
+          "id": 1,
+          "url": "assets/img/progetti/DSC04177.jpg"
+        },
+        {
+          "id": 2,
+          "url": "assets/img/progetti/DSC04372.jpg"
+        },
+        {
+          "id": 3,
+          "url": "assets/img/progetti/DSC05756.jpg"
+        },
+        {
+          "id": 4,
+          "url": "assets/img/progetti/DSC06517.jpg"
+        },
+        {
+          "id": 5,
+          "url": "assets/img/progetti/DSC07540.jpg"
+        },
+        {
+          "id": 6,
+          "url": "assets/img/progetti/DSC07597.jpg"
+        }
+      ],
+      "slug": "Progetti"
+    }
+  ]
+}

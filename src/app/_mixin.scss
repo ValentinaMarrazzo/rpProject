@@ -1,0 +1,32 @@
+@mixin button($theme: #d000ff){
+  background-color: transparent;
+  color: $theme;
+  border: 1px solid $theme;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin btnhover($theme: #d000ff){
+  background-color: $theme;
+  color: white;
+  border: none;
+  transition: all 1s ease;
+}
+
+@mixin input(){
+  font-size: 1.5rem;
+  margin: 0;
+  width: fit-content;
+}
+
+@mixin control($theme: #d000ff, $font:'Montserrat'){
+  color: $theme;
+  font-family: $font, sans-serif;
+  text-decoration: underline;
+}
+
+@mixin title($font:'Montserrat', $color: white){
+  font-size: 2rem;
+    font-family: $font, sans-serif;
+    color: $color;
+    margin: 2%;
+}

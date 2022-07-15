@@ -1,0 +1,61 @@
+<h1>Gestione profilo</h1>
+
+<ng-container *ngIf="!edit">
+
+  <div id="card">
+    <div id="title">
+    <h2>Ciao, {{activeCustomer?.nickname}}</h2>
+    <button (click)="edit=true" *ngIf="!edit">
+      <i nz-icon nzType="edit" nzTheme="outline"></i>
+    </button>
+  </div>
+  <div id="content">
+    <ul>
+      <li>
+        <h3>Email:</h3>
+        <p *ngIf="!edit">{{activeCustomer?.email}}</p>
+
+      </li>
+      <li>
+        <h3>Lista acquisti:</h3>
+        <ul>
+          <li *ngFor="let p of activeCustomer?.purchases">
+            {{p.name}}
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <button (click)="logOutNow()">Esci</button>
+  <button (click)="unsubscribe()">Elimina l'account</button>
+</div>
+</ng-container>
+
+<ng-container *ngIf="edit">
+  <div id="form">
+
+    <form [formGroup]="validateForm" (ngSubmit)="updateInfo()">
+      <div class="group">
+        <span class="label">
+        <label nzRequired nzFor="email">E-mail</label>
+
+      </span>
+      <nz-form-control nzErrorTip="Per favore, inserisci un'email valida">
+        <input type="email" nz-input formControlName="email" id="email" [(ngModel)]="activeCustomer.email"/>
+      </nz-form-control>
+    </div>
+    <div class="group">
+      <span class="label">
+        <label nzRequired nzFor="nickname">Nickname</label>
+
+      </span>
+
+      <input type="text" nz-input formControlName="nickname" id="nickname" [(ngModel)]="activeCustomer.nickname"/>
+
+    </div>
+    <button type="submit">Conferma</button>
+  </form>
+</div>
+</ng-container>
+
+<div id="space"></div>

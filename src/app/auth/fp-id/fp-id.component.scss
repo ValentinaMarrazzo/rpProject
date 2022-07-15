@@ -1,0 +1,46 @@
+@import '../../mixin';
+@import '../../variables';
+
+h1, h2{
+  @include title;
+  text-align: center;
+}
+
+a{
+  color: $copywritingColor;
+  text-decoration: underline;
+  text-align: center;
+}
+
+#form{
+  margin: auto;
+  width: fit-content;
+  padding: 3%;
+  border: 1px solid $detailsTheme;
+  border-radius: 3%;
+  text-align: center;
+  #item{
+    margin: 3% 0;
+    label{
+      margin: 3% 0;
+     font-family: $copywritingFont;
+     color: $copywritingColor;
+     font-size: 1rem;
+     font-weight: 800;
+   }
+   input{
+    @include input;
+   }
+  }
+  button{
+   @include button;
+  }
+
+  #error{
+    margin: 3% 0;
+    font-family: $copywritingFont;
+    color: $copywritingColor;
+    font-size: 1rem;
+    font-weight: 800;
+  }
+}

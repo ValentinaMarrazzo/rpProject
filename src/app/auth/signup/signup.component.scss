@@ -1,0 +1,13 @@
+@import '../../mixin';
+
+input{
+  @include input;
+}
+
+button{
+  @include button;
+}
+
+button:hover{
+  @include btnhover;
+}

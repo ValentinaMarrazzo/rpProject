@@ -1,0 +1,35 @@
+@import '../../variables';
+@import '../../mixin';
+
+.card-product{
+  text-align: center;
+  font-family: $copywritingFont;
+}
+
+h3, h2{
+  color: $copywritingColor;
+}
+
+h3{
+  font-size: 1rem;
+
+}
+
+h2{
+  font-size: 1.3rem;
+}
+
+p{
+  text-align: center;
+  font-family: $copywritingFont;
+  color: $copywritingColor;
+  font-size: 0.9rem;
+}
+
+button {
+  @include button;
+}
+
+button:hover{
+  @include btnhover;
+}

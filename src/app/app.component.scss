@@ -1,0 +1,33 @@
+@import './variables';
+
+ nz-sider, nz-header{
+  position: sticky;
+  top: 0;
+  background-color: $navigationTheme;
+}
+
+
+nz-header{
+  z-index: 10000;
+  height: fit-content;
+}
+
+
+
+nz-content {
+  background-color: $contentTheme;
+}
+
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  color: $detailsTheme;
+  cursor: pointer;
+  transition: color 0.3s;
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+

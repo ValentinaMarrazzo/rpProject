@@ -1,0 +1,31 @@
+@import '../../mixin';
+@import '../../variables';
+
+input{
+  @include input;
+}
+
+a{
+  font-size: 0.90rem;
+  font-family: $copywritingFont;
+  color: $copywritingColor;
+  text-decoration: underline;
+  display: block;
+}
+
+button{
+  margin: 5% 0;
+  @include button;
+}
+
+button:hover{
+   @include btnhover;
+}
+
+#error{
+  p{
+    @include control;
+
+  }
+
+}

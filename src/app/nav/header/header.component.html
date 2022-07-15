@@ -1,0 +1,21 @@
+<div id="navHeader">
+
+
+<div id="cart">
+
+  <a [routerLink]="['/shop/cart']">
+    <i nz-icon nzType="shopping-cart" nzTheme="outline"></i>
+  </a>
+  <span *ngIf="totalItems != 0"> <p>{{totalItems}}</p></span>
+</div>
+
+
+<div id="user">
+
+  <a [routerLink]="['/user/' + userId]">
+    <i nz-icon nzType="user" nzTheme="outline"></i>
+
+  </a>
+</div>
+
+</div>

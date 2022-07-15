@@ -1,0 +1,57 @@
+<h1>I miei acquisti</h1>
+
+<ng-container *ngIf="cartisfull.length != 0">
+
+  <div id="checkout">
+    <div nz-row id="operation">
+      <button (click)="delAll()">Svuota il carrello</button>
+    </div>
+
+    <div nz-row [nzGutter]="16" id="title">
+      <div nz-col nzSpan="9">
+    <h2>Il tuo carrello</h2>
+  </div>
+
+
+      <div nz-col nzSpan="9" id="total">
+        <h3>Totale:{{totalPrice}} &euro;</h3>
+      </div>
+    </div>
+    <div nz-row [nzGutter]="16" id="cart-card">
+
+      <div class="product" *ngFor="let item of cartisfull">
+    <div nz-row class="btn-del">
+      <button (click)="delThis(item)">Elimina</button>
+    </div>
+    <div nz-col class="img">
+      <img [src]="item.imgurl" alt="">
+    </div>
+    <div nz-col class="product-description">
+      <h3>{{item.name}}</h3>
+      <p>{{item.description}}</p>
+    </div>
+    <div nz-col class="product-price">
+      <p>{{item.price}} &euro;</p>
+    </div>
+  </div>
+</div>
+
+
+
+<button (click)="confirmOrder()">Completa ordine</button>
+</div>
+</ng-container>
+
+<div id="msg" *ngIf="completeMsg.status">
+  <p>{{completeMsg.text}}</p>
+</div>
+
+<ng-container *ngIf="cartisfull.length == 0">
+
+  <div id="container">
+    <h2>Il tuo carrello è vuoto</h2>
+    <a [routerLink]="['/shop']">
+      <h3>Torna allo shop</h3>
+    </a>
+  </div>
+</ng-container>

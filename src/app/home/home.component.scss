@@ -1,0 +1,42 @@
+@import '../mixin';
+@import '../variables';
+
+#container-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  .card{
+    width: $imageWidth;
+    height: $imageHeight;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .overlay{
+     display: flex;
+    width: $imageWidth;
+    height: $imageHeight;
+    background-color: $navigationTheme;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  .link{
+    align-self: center;
+    margin: 0 auto;
+
+    h1 {
+    text-decoration: none;
+    color: $copywritingColor;
+    font-family: $copywritingFont;
+    font-size: 3rem;
+    width: fit-content;
+   }
+  }
+   .overlay:hover{
+    opacity: 0.5;
+
+   }
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}

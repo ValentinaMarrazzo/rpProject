@@ -1,0 +1,14 @@
+<div id="container-grid">
+<ng-container *ngFor="let p of photos">
+  <div class="card" style="background-image: url('../../{{p.coverUrl}}');">
+    <a [routerLink]="'/pages/' + p.slug">
+  <div class="overlay">
+    <div class="link">
+        <h1>{{p.slug}}</h1>
+      </div>
+    </div>
+  </a>
+  </div>
+
+</ng-container>
+</div>

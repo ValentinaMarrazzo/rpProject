@@ -1,0 +1,20 @@
+<h1>Reimposta la tua password</h1>
+
+<div id="form">
+
+  <form [formGroup]="validateForm" (ngSubmit)="getUserByEmail(forgot)">
+
+      <div id="item">
+
+        <label for="email">Inserisci la tua email:</label>
+        <nz-form-control nzErrorTip="Per favore inserisci la tua email">
+
+          <input type="email" nz-input formControlName="email" placeholder="Email" id="email" [(ngModel)]="forgot"/>
+
+        </nz-form-control>
+      </div>
+
+    <button nz-button type="submit">Conferma</button>
+    <div id="error" *ngIf="errMsg.status">{{errMsg.text}}</div>
+  </form>
+</div>

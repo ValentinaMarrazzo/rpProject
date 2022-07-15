@@ -1,0 +1,27 @@
+@import '../../variables';
+@import '../../mixin';
+
+h1{
+  font-family: $copywritingFancy;
+  font-size: 3rem;
+  color: $copywritingColor;
+  text-align: center;
+}
+
+hr{
+  width: 5vw;
+  border-color: $copywritingColor;
+  text-align: center;
+}
+
+p{
+  margin: 2% 5%;
+  font-family: $copywritingFont;
+  color: $copywritingColor;
+  font-size: 1.7rem;
+  text-align: justify;
+}
+
+#spacing{
+  height: 55vh;
+}
